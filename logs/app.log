@@ -1,0 +1,236 @@
+2026-04-18 20:30:36 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 20:30:36 | INFO     | extractor | [green]✔ notebook[/] → 2 itens em 0.00s
+2026-04-18 20:30:36 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mouse[/]
+2026-04-18 20:30:36 | ERROR    | extractor | [red]Timeout[/] ao buscar categoria 'mouse' após 15s
+2026-04-18 20:30:36 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]teclado[/]
+2026-04-18 20:30:36 | ERROR    | extractor | [red]Erro de conexão[/] na categoria 'teclado': 
+2026-04-18 20:30:36 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]monitor[/]
+2026-04-18 20:30:36 | ERROR    | extractor | [red]HTTP 500[/] na categoria 'monitor': 
+2026-04-18 20:30:36 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mousepad[/]
+2026-04-18 20:30:36 | INFO     | extractor | [green]✔ mousepad[/] → 0 itens em 0.00s
+2026-04-18 20:30:36 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 20:30:36 | INFO     | extractor | [green]✔ notebook[/] → 2 itens em 0.00s
+2026-04-18 20:30:36 | INFO     | extractor | [bold]Iniciando extração[/] de 2 categorias (workers=2)
+2026-04-18 20:30:36 | INFO     | extractor | [bold green]Extração concluída[/] — 2 itens totais em 0.00s | Falhas: 0
+2026-04-18 20:30:36 | INFO     | extractor | [bold]Iniciando extração[/] de 1 categorias (workers=1)
+2026-04-18 20:30:36 | INFO     | extractor | [bold green]Extração concluída[/] — 1 itens totais em 0.00s | Falhas: 0
+2026-04-18 20:30:36 | INFO     | extractor | [bold]Iniciando extração[/] de 2 categorias (workers=1)
+2026-04-18 20:30:36 | ERROR    | extractor | [red]Falha crítica[/] ao processar 'mouse': Erro simulado
+Traceback (most recent call last):
+  File "C:\Users\Samuel\Desktop\Projetos\mercado_monitor\src\extract\api_extractor.py", line 127, in extract_all
+    items = future.result()
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 395, in __get_result
+    raise self._exception
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\mock.py", line 1247, in _execute_mock_call
+    result = effect(*args, **kwargs)
+  File "C:\Users\Samuel\Desktop\Projetos\mercado_monitor\tests\test_extract.py", line 128, in side_effect
+    raise RuntimeError("Erro simulado")
+RuntimeError: Erro simulado
+2026-04-18 20:30:37 | INFO     | extractor | [bold green]Extração concluída[/] — 1 itens totais em 0.48s | Falhas: 1
+2026-04-18 20:30:37 | WARNING  | extractor | Categorias com falha: ['mouse']
+2026-04-18 20:30:37 | INFO     | extractor | [bold]Iniciando extração[/] de 2 categorias (workers=2)
+2026-04-18 20:30:37 | INFO     | extractor | [bold green]Extração concluída[/] — 0 itens totais em 0.00s | Falhas: 0
+2026-04-18 20:30:37 | INFO     | transformer | [bold]Transformando[/] 1 itens brutos...
+2026-04-18 20:30:37 | INFO     | transformer | [green]✔ Transformação concluída[/] — 1 válidos | 0 descartados
+2026-04-18 20:30:37 | INFO     | transformer | Produtos com desconto: [bold yellow]1[/] (100.0%)
+2026-04-18 20:30:37 | INFO     | transformer | [bold]Transformando[/] 0 itens brutos...
+2026-04-18 20:30:37 | INFO     | transformer | [green]✔ Transformação concluída[/] — 0 válidos | 0 descartados
+2026-04-18 20:30:37 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:30:37 | INFO     | transformer | [green]✔ Transformação concluída[/] — 1 válidos | 2 descartados
+2026-04-18 20:30:37 | INFO     | transformer | Produtos com desconto: [bold yellow]1[/] (100.0%)
+2026-04-18 20:30:37 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:30:37 | INFO     | transformer | [green]✔ Transformação concluída[/] — 3 válidos | 0 descartados
+2026-04-18 20:30:37 | INFO     | transformer | Produtos com desconto: [bold yellow]2[/] (66.7%)
+2026-04-18 20:30:37 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:30:37 | INFO     | transformer | [green]✔ Transformação concluída[/] — 3 válidos | 0 descartados
+2026-04-18 20:30:37 | INFO     | transformer | Produtos com desconto: [bold yellow]2[/] (66.7%)
+2026-04-18 20:30:37 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:30:37 | INFO     | transformer | [green]✔ Transformação concluída[/] — 3 válidos | 0 descartados
+2026-04-18 20:30:37 | INFO     | transformer | Produtos com desconto: [bold yellow]2[/] (66.7%)
+2026-04-18 20:30:54 | INFO     | main | [bold]▶ Pipeline iniciado[/] — 18/04/2026 20:30:54
+2026-04-18 20:30:54 | INFO     | extractor | [bold]Iniciando extração[/] de 7 categorias (workers=4)
+2026-04-18 20:30:54 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 20:30:54 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mouse[/]
+2026-04-18 20:30:54 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]teclado[/]
+2026-04-18 20:30:54 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]fone de ouvido[/]
+2026-04-18 20:30:55 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'fone de ouvido': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=fone+de+ouvido&limit=50
+2026-04-18 20:30:55 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mousepad[/]
+2026-04-18 20:30:55 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'mouse': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=mouse&limit=50
+2026-04-18 20:30:55 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]suporte notebook[/]
+2026-04-18 20:30:55 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'teclado': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=teclado&limit=50
+2026-04-18 20:30:55 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]monitor[/]
+2026-04-18 20:30:55 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'suporte notebook': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=suporte+notebook&limit=50
+2026-04-18 20:30:55 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'mousepad': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=mousepad&limit=50
+2026-04-18 20:30:55 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'notebook': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=notebook&limit=50
+2026-04-18 20:30:56 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'monitor': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=monitor&limit=50
+2026-04-18 20:30:56 | INFO     | extractor | [bold green]Extração concluída[/] — 0 itens totais em 1.46s | Falhas: 0
+2026-04-18 20:30:56 | ERROR    | main | [red]Extração retornou zero itens. Abortando pipeline.[/]
+2026-04-18 20:31:46 | INFO     | main | [bold]▶ Pipeline iniciado[/] — 18/04/2026 20:31:46
+2026-04-18 20:31:46 | INFO     | extractor | [bold]Iniciando extração[/] de 7 categorias (workers=4)
+2026-04-18 20:31:46 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 20:31:46 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]fone de ouvido[/]
+2026-04-18 20:31:46 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]teclado[/]
+2026-04-18 20:31:46 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mouse[/]
+2026-04-18 20:31:47 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'notebook': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=notebook&limit=50
+2026-04-18 20:31:47 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'fone de ouvido': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=fone+de+ouvido&limit=50
+2026-04-18 20:31:47 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mousepad[/]
+2026-04-18 20:31:47 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'teclado': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=teclado&limit=50
+2026-04-18 20:31:47 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]suporte notebook[/]
+2026-04-18 20:31:47 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]monitor[/]
+2026-04-18 20:31:47 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'mouse': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=mouse&limit=50
+2026-04-18 20:31:47 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'mousepad': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=mousepad&limit=50
+2026-04-18 20:31:47 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'monitor': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=monitor&limit=50
+2026-04-18 20:31:47 | ERROR    | extractor | [red]HTTP 403[/] na categoria 'suporte notebook': 403 Client Error: Forbidden for url: https://api.mercadolibre.com/sites/MLB/search?q=suporte+notebook&limit=50
+2026-04-18 20:31:47 | INFO     | extractor | [bold green]Extração concluída[/] — 0 itens totais em 1.19s | Falhas: 0
+2026-04-18 20:31:47 | ERROR    | main | [red]Extração retornou zero itens. Abortando pipeline.[/]
+2026-04-18 20:52:53 | INFO     | main | [bold]Pipeline iniciado[/] — 18/04/2026 20:52:53
+2026-04-18 20:52:53 | INFO     | extractor | [yellow]Modo publico[/]: sem ML_ACCESS_TOKEN. Para acesso completo, defina a variavel de ambiente ML_ACCESS_TOKEN.
+2026-04-18 20:52:53 | INFO     | extractor | [bold]Iniciando extracao[/] de 7 categorias (workers=4)
+2026-04-18 20:52:53 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 20:52:53 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]fone de ouvido[/]
+2026-04-18 20:52:53 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mouse[/]
+2026-04-18 20:52:53 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]teclado[/]
+2026-04-18 20:52:54 | DEBUG    | extractor | Browser mode falhou (403) para 'notebook'
+2026-04-18 20:52:54 | DEBUG    | extractor | Browser mode falhou (403) para 'mouse'
+2026-04-18 20:52:54 | DEBUG    | extractor | Browser mode falhou (403) para 'fone de ouvido'
+2026-04-18 20:52:54 | DEBUG    | extractor | Browser mode falhou (403) para 'teclado'
+2026-04-18 20:52:55 | WARNING  | extractor | [yellow]Sem dados[/] para 'teclado' apos 1.13s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:52:55 | WARNING  | extractor | [yellow]Sem dados[/] para 'mouse' apos 1.15s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:52:55 | WARNING  | extractor | [yellow]Sem dados[/] para 'notebook' apos 1.16s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:52:55 | WARNING  | extractor | [yellow]Sem dados[/] para 'fone de ouvido' apos 1.16s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:52:55 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mousepad[/]
+2026-04-18 20:52:55 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]suporte notebook[/]
+2026-04-18 20:52:55 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]monitor[/]
+2026-04-18 20:52:55 | DEBUG    | extractor | Browser mode falhou (403) para 'monitor'
+2026-04-18 20:52:55 | DEBUG    | extractor | Browser mode falhou (403) para 'suporte notebook'
+2026-04-18 20:52:55 | DEBUG    | extractor | Browser mode falhou (403) para 'mousepad'
+2026-04-18 20:52:56 | WARNING  | extractor | [yellow]Sem dados[/] para 'monitor' apos 0.85s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:52:56 | WARNING  | extractor | [yellow]Sem dados[/] para 'suporte notebook' apos 0.87s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:52:56 | WARNING  | extractor | [yellow]Sem dados[/] para 'mousepad' apos 0.89s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:52:56 | INFO     | extractor | [bold green]Extracao concluida[/] — 0 itens em 2.07s | Falhas: 7
+2026-04-18 20:52:56 | WARNING  | extractor | Categorias sem dados: ['teclado', 'mouse', 'notebook', 'fone de ouvido', 'monitor', 'suporte notebook', 'mousepad']
+2026-04-18 20:52:56 | ERROR    | main | [red]Extração retornou zero itens. Abortando pipeline.[/]
+2026-04-18 20:56:51 | INFO     | main | [bold]Pipeline iniciado[/] — 18/04/2026 20:56:51
+2026-04-18 20:56:51 | INFO     | main | [yellow]Modo DEMO:[/] usando dados simulados (sem chamada a API)
+2026-04-18 20:56:51 | INFO     | transformer | [bold]Transformando[/] 23 itens brutos...
+2026-04-18 20:56:51 | INFO     | transformer | [green]✔ Transformação concluída[/] — 23 válidos | 0 descartados
+2026-04-18 20:56:51 | INFO     | transformer | Produtos com desconto: [bold yellow]17[/] (73.9%)
+2026-04-18 20:56:51 | INFO     | csv_loader | [green]CSV:[/] 23 novos registros salvos | 0 já existiam | Total: 23
+2026-04-18 20:56:51 | INFO     | db_loader | [green]SQLite:[/] 23 novos registros inseridos | 0 ignorados (duplicatas)
+2026-04-18 20:56:51 | INFO     | main | [bold green]Pipeline concluido[/] em 0.09s
+2026-04-18 20:57:22 | INFO     | main | [bold]Pipeline iniciado[/] — 18/04/2026 20:57:22
+2026-04-18 20:57:22 | INFO     | main | [yellow]Modo DEMO:[/] usando dados simulados (sem chamada a API)
+2026-04-18 20:57:22 | INFO     | transformer | [bold]Transformando[/] 23 itens brutos...
+2026-04-18 20:57:22 | INFO     | transformer | [green]✔ Transformação concluída[/] — 23 válidos | 0 descartados
+2026-04-18 20:57:22 | INFO     | transformer | Produtos com desconto: [bold yellow]17[/] (73.9%)
+2026-04-18 20:57:22 | INFO     | csv_loader | [yellow]CSV:[/] Nenhum registro novo (todos já existem).
+2026-04-18 20:57:22 | INFO     | db_loader | [green]SQLite:[/] 0 novos registros inseridos | 23 ignorados (duplicatas)
+2026-04-18 20:57:22 | INFO     | main | [bold green]Pipeline concluido[/] em 0.06s
+2026-04-18 20:59:52 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 20:59:52 | INFO     | extractor | [green]OK[/] notebook (2 itens, 0.00s) [dim][browser][/]
+2026-04-18 20:59:52 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mouse[/]
+2026-04-18 20:59:52 | ERROR    | extractor | [red]Timeout[/] ao buscar 'mouse' (15s)
+2026-04-18 20:59:52 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]teclado[/]
+2026-04-18 20:59:52 | ERROR    | extractor | [red]Conexao falhou[/] 'teclado': 
+2026-04-18 20:59:52 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]monitor[/]
+2026-04-18 20:59:52 | DEBUG    | extractor | Browser mode falhou (500) para 'monitor'
+2026-04-18 20:59:52 | WARNING  | extractor | [yellow]Sem dados[/] para 'monitor' apos 0.00s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 20:59:52 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mousepad[/]
+2026-04-18 20:59:52 | INFO     | extractor | [green]OK[/] mousepad (0 itens, 0.00s) [dim][browser][/]
+2026-04-18 20:59:52 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 20:59:52 | INFO     | extractor | [green]OK[/] notebook (2 itens, 0.00s) [dim][browser][/]
+2026-04-18 20:59:52 | INFO     | extractor | [yellow]Modo publico[/]: sem ML_ACCESS_TOKEN. Para acesso completo, defina a variavel de ambiente ML_ACCESS_TOKEN.
+2026-04-18 20:59:52 | INFO     | extractor | [bold]Iniciando extracao[/] de 2 categorias (workers=2)
+2026-04-18 20:59:52 | INFO     | extractor | [bold green]Extracao concluida[/] — 2 itens em 0.00s | Falhas: 0
+2026-04-18 20:59:52 | INFO     | extractor | [yellow]Modo publico[/]: sem ML_ACCESS_TOKEN. Para acesso completo, defina a variavel de ambiente ML_ACCESS_TOKEN.
+2026-04-18 20:59:52 | INFO     | extractor | [bold]Iniciando extracao[/] de 1 categorias (workers=1)
+2026-04-18 20:59:52 | INFO     | extractor | [bold green]Extracao concluida[/] — 1 itens em 0.00s | Falhas: 0
+2026-04-18 20:59:52 | INFO     | extractor | [yellow]Modo publico[/]: sem ML_ACCESS_TOKEN. Para acesso completo, defina a variavel de ambiente ML_ACCESS_TOKEN.
+2026-04-18 20:59:52 | INFO     | extractor | [bold]Iniciando extracao[/] de 2 categorias (workers=1)
+2026-04-18 20:59:52 | ERROR    | extractor | [red]Falha critica[/] 'mouse': Erro simulado
+Traceback (most recent call last):
+  File "C:\Users\Samuel\Desktop\Projetos\mercado_monitor\src\extract\api_extractor.py", line 238, in extract_all
+    items = future.result()
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 395, in __get_result
+    raise self._exception
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\mock.py", line 1176, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\mock.py", line 1180, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Samuel\AppData\Local\Python\pythoncore-3.14-64\Lib\unittest\mock.py", line 1247, in _execute_mock_call
+    result = effect(*args, **kwargs)
+  File "C:\Users\Samuel\Desktop\Projetos\mercado_monitor\tests\test_extract.py", line 128, in side_effect
+    raise RuntimeError("Erro simulado")
+RuntimeError: Erro simulado
+2026-04-18 20:59:53 | INFO     | extractor | [bold green]Extracao concluida[/] — 1 itens em 0.47s | Falhas: 1
+2026-04-18 20:59:53 | WARNING  | extractor | Categorias sem dados: ['mouse']
+2026-04-18 20:59:53 | INFO     | extractor | [yellow]Modo publico[/]: sem ML_ACCESS_TOKEN. Para acesso completo, defina a variavel de ambiente ML_ACCESS_TOKEN.
+2026-04-18 20:59:53 | INFO     | extractor | [bold]Iniciando extracao[/] de 2 categorias (workers=2)
+2026-04-18 20:59:53 | INFO     | extractor | [bold green]Extracao concluida[/] — 0 itens em 0.00s | Falhas: 2
+2026-04-18 20:59:53 | WARNING  | extractor | Categorias sem dados: ['notebook', 'mouse']
+2026-04-18 20:59:53 | INFO     | transformer | [bold]Transformando[/] 1 itens brutos...
+2026-04-18 20:59:53 | INFO     | transformer | [green]✔ Transformação concluída[/] — 1 válidos | 0 descartados
+2026-04-18 20:59:53 | INFO     | transformer | Produtos com desconto: [bold yellow]1[/] (100.0%)
+2026-04-18 20:59:53 | INFO     | transformer | [bold]Transformando[/] 0 itens brutos...
+2026-04-18 20:59:53 | INFO     | transformer | [green]✔ Transformação concluída[/] — 0 válidos | 0 descartados
+2026-04-18 20:59:53 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:59:53 | INFO     | transformer | [green]✔ Transformação concluída[/] — 1 válidos | 2 descartados
+2026-04-18 20:59:53 | INFO     | transformer | Produtos com desconto: [bold yellow]1[/] (100.0%)
+2026-04-18 20:59:53 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:59:53 | INFO     | transformer | [green]✔ Transformação concluída[/] — 3 válidos | 0 descartados
+2026-04-18 20:59:53 | INFO     | transformer | Produtos com desconto: [bold yellow]2[/] (66.7%)
+2026-04-18 20:59:53 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:59:53 | INFO     | transformer | [green]✔ Transformação concluída[/] — 3 válidos | 0 descartados
+2026-04-18 20:59:53 | INFO     | transformer | Produtos com desconto: [bold yellow]2[/] (66.7%)
+2026-04-18 20:59:53 | INFO     | transformer | [bold]Transformando[/] 3 itens brutos...
+2026-04-18 20:59:53 | INFO     | transformer | [green]✔ Transformação concluída[/] — 3 válidos | 0 descartados
+2026-04-18 20:59:53 | INFO     | transformer | Produtos com desconto: [bold yellow]2[/] (66.7%)
+2026-04-18 21:14:30 | INFO     | main | [bold]Pipeline iniciado[/] — 18/04/2026 21:14:30
+2026-04-18 21:14:30 | INFO     | extractor | [yellow]Modo publico[/]: sem ML_ACCESS_TOKEN. Para acesso completo, defina a variavel de ambiente ML_ACCESS_TOKEN.
+2026-04-18 21:14:30 | INFO     | extractor | [bold]Iniciando extracao[/] de 7 categorias (workers=4)
+2026-04-18 21:14:30 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]notebook[/]
+2026-04-18 21:14:30 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]fone de ouvido[/]
+2026-04-18 21:14:30 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]teclado[/]
+2026-04-18 21:14:30 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mouse[/]
+2026-04-18 21:14:31 | DEBUG    | extractor | Browser mode falhou (403) para 'mouse'
+2026-04-18 21:14:31 | DEBUG    | extractor | Browser mode falhou (403) para 'notebook'
+2026-04-18 21:14:31 | DEBUG    | extractor | Browser mode falhou (403) para 'teclado'
+2026-04-18 21:14:31 | DEBUG    | extractor | Browser mode falhou (403) para 'fone de ouvido'
+2026-04-18 21:14:31 | WARNING  | extractor | [yellow]Sem dados[/] para 'teclado' apos 1.29s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 21:14:31 | WARNING  | extractor | [yellow]Sem dados[/] para 'notebook' apos 1.28s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 21:14:31 | WARNING  | extractor | [yellow]Sem dados[/] para 'mouse' apos 1.29s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 21:14:31 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]mousepad[/]
+2026-04-18 21:14:31 | WARNING  | extractor | [yellow]Sem dados[/] para 'fone de ouvido' apos 1.31s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 21:14:31 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]suporte notebook[/]
+2026-04-18 21:14:31 | INFO     | extractor | [bold cyan]Buscando:[/] categoria=[yellow]monitor[/]
+2026-04-18 21:14:32 | DEBUG    | extractor | Browser mode falhou (403) para 'mousepad'
+2026-04-18 21:14:32 | DEBUG    | extractor | Browser mode falhou (403) para 'suporte notebook'
+2026-04-18 21:14:32 | DEBUG    | extractor | Browser mode falhou (403) para 'monitor'
+2026-04-18 21:14:32 | WARNING  | extractor | [yellow]Sem dados[/] para 'mousepad' apos 0.93s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 21:14:32 | WARNING  | extractor | [yellow]Sem dados[/] para 'monitor' apos 0.94s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 21:14:32 | WARNING  | extractor | [yellow]Sem dados[/] para 'suporte notebook' apos 0.95s — API pode exigir autenticacao OAuth. Defina ML_ACCESS_TOKEN para habilitar acesso completo.
+2026-04-18 21:14:32 | INFO     | extractor | [bold green]Extracao concluida[/] — 0 itens em 2.31s | Falhas: 7
+2026-04-18 21:14:32 | WARNING  | extractor | Categorias sem dados: ['teclado', 'notebook', 'mouse', 'fone de ouvido', 'mousepad', 'monitor', 'suporte notebook']
+2026-04-18 21:14:32 | ERROR    | main | [red]Extracao retornou zero itens.[/]
