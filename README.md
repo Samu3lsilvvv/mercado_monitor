@@ -284,19 +284,3 @@ pytest tests/ -v --tb=short
 | **Confiabilidade** | Retry automático com backoff exponencial e tratamento de todos os tipos de falha HTTP |
 | **Auditabilidade** | Logs estruturados com timestamp, nível e tempo de execução por etapa |
 | **Automação** | Modo `--schedule` permite execução contínua sem intervenção manual |
-
----
-
-## 🗺 Roadmap
-
-- [ ] Dashboard web com visualização de tendências de preços
-- [ ] Alertas por e-mail/Telegram quando desconto supera threshold configurável
-- [ ] Suporte a mais sites (Amazon, Shopee) via adaptadores plugáveis
-- [ ] Export para Google Sheets
-- [ ] Docker + cron para execução em servidor
-
----
-
-## 📄 Licença
-
-MIT License — livre para uso comercial e pessoal.
